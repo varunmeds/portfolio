@@ -460,14 +460,15 @@
         .edu-card {
             background: rgba(36, 28, 46, 0.75); border: 1px solid var(--border); border-radius: 20px;
             padding: 2rem; backdrop-filter: blur(8px);
+            display: flex; justify-content: space-between; align-items: center; gap: 1.5rem;
             transition: transform 0.35s, border-color 0.35s, box-shadow 0.35s;
         }
         .edu-card:hover {
             transform: translateY(-3px); border-color: var(--accent);
             box-shadow: 0 8px 30px rgba(240, 168, 192, 0.12);
         }
-        .edu-icon { margin-bottom: 0.75rem; }
-        .edu-icon img { width: 48px; height: 48px; object-fit: contain; border-radius: 8px; }
+        .edu-icon { flex-shrink: 0; }
+        .edu-icon img { width: 56px; height: 56px; object-fit: contain; border-radius: 8px; }
         .edu-degree { font-size: 1.2rem; font-weight: 700; color: var(--text); margin-bottom: 0.3rem; }
         .edu-school { font-size: 0.95rem; color: var(--accent); font-weight: 600; margin-bottom: 0.25rem; }
         .edu-detail { font-size: 0.82rem; color: var(--text-muted); }
@@ -801,16 +802,20 @@
     <h2 class="section-title fade-in">Where I Studied</h2>
     <div class="edu-grid fade-in">
         <div class="edu-card">
+            <div class="edu-text">
+                <div class="edu-degree">M.S. Operations Research</div>
+                <div class="edu-school">Columbia University</div>
+                <div class="edu-detail">New York, NY</div>
+            </div>
             <div class="edu-icon"><img src="logos/columbia_uni.jpg" alt="Columbia University"></div>
-            <div class="edu-degree">M.S. Operations Research</div>
-            <div class="edu-school">Columbia University</div>
-            <div class="edu-detail">New York, NY</div>
         </div>
         <div class="edu-card">
+            <div class="edu-text">
+                <div class="edu-degree">B.E. Industrial Engineering</div>
+                <div class="edu-school">R.V. College of Engineering</div>
+                <div class="edu-detail">Bangalore, India</div>
+            </div>
             <div class="edu-icon"><img src="logos/rvce.webp" alt="R.V. College of Engineering"></div>
-            <div class="edu-degree">B.E. Industrial Engineering</div>
-            <div class="edu-school">R.V. College of Engineering</div>
-            <div class="edu-detail">Bangalore, India</div>
         </div>
     </div>
 </section>
