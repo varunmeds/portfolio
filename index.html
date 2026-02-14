@@ -253,6 +253,11 @@
             backdrop-filter: blur(8px);
         }
         .leadership-icon { font-size: 1.1rem; }
+        .leadership-context {
+            display: block; font-family: 'JetBrains Mono', monospace;
+            font-size: 0.65rem; color: var(--text-muted); margin-top: 0.2rem;
+            opacity: 0.7; font-weight: 400;
+        }
 
         /* ── Metric Ticker ── */
         .metrics {
@@ -279,6 +284,11 @@
             margin-bottom: 0.5rem;
         }
         .metric-label { color: var(--text-secondary); font-size: 0.85rem; font-weight: 500; }
+        .metric-context {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.68rem; color: var(--text-muted); margin-top: 0.5rem;
+            opacity: 0.7; line-height: 1.4;
+        }
 
         /* ── Projects / What I've Built ── */
         .projects-grid {
@@ -695,15 +705,15 @@
 <div class="leadership-strip">
     <div class="leadership-item fade-in">
         <span class="leadership-icon">&#128101;</span>
-        <span>Managed 8 FTE</span>
+        <span>Managed 8 FTE<span class="leadership-context">IAS Social Classification team</span></span>
     </div>
     <div class="leadership-item fade-in">
         <span class="leadership-icon">&#127793;</span>
-        <span>Founded the ML team</span>
+        <span>Founded the ML team<span class="leadership-context">Built from zero at IAS</span></span>
     </div>
     <div class="leadership-item fade-in">
         <span class="leadership-icon">&#128640;</span>
-        <span>Drove 0 &rarr; $150M product line</span>
+        <span>Drove 0 &rarr; $150M product line<span class="leadership-context">Brand Safety video classification</span></span>
     </div>
 </div>
 
@@ -712,18 +722,22 @@
     <div class="metric-card fade-in">
         <div class="metric-number">$150M</div>
         <div class="metric-label">Annual Revenue Powered</div>
+        <div class="metric-context">Brand Safety suite across TikTok, YouTube, Meta, Twitter</div>
     </div>
     <div class="metric-card fade-in">
         <div class="metric-number">3T+</div>
         <div class="metric-label">Daily Impressions Processed</div>
+        <div class="metric-context">Video classification engine, 23 countries</div>
     </div>
     <div class="metric-card fade-in">
         <div class="metric-number">34%</div>
         <div class="metric-label">YoY Revenue Growth</div>
+        <div class="metric-context">Social classification product line</div>
     </div>
     <div class="metric-card fade-in">
         <div class="metric-number">99.5%</div>
         <div class="metric-label">Labeling Cost Reduction</div>
+        <div class="metric-context">Multimodal retrieval + AI labeling pipeline</div>
     </div>
     <div class="metric-card fade-in">
         <div class="metric-number" style="font-size: 1.8rem;">&#128220;</div>
