@@ -752,7 +752,7 @@
 <div class="leadership-strip">
     <div class="leadership-item fade-in">
         <span class="leadership-icon">&#128101;</span>
-        <span>Managed 8 FTE<span class="leadership-context">IAS Social Classification team</span></span>
+        <span>Interim manager, 8 FTE<span class="leadership-context">Innovation team: T&amp;S policy, ML research, ML eng, DevOps</span></span>
     </div>
     <div class="leadership-item fade-in">
         <span class="leadership-icon">&#127793;</span>
@@ -874,7 +874,7 @@
             </div>
             <div class="card-where">Integral Ad Science &middot; Trust &amp; Safety &middot; Founding project</div>
             <h3>Multimodal Video Classification Engine</h3>
-            <p>Built the core Trust &amp; Safety classification product from zero. Detects hard-to-catch, low-prevalence unsafe content across TikTok, YouTube, Meta, and Twitter. 3 trillion impressions/year at 34% YoY growth. Deployed across 23 countries. Patented.</p>
+            <p>Founding member of the Multimodal ML team. Built the video harm detection system covering 12 GARM unsafe-content and 37 contextual categories across TikTok, YouTube, Meta, and X. Processes 50 years of video per day and 3 trillion impressions per year, powering ~$150M in annual revenue (~30% of company). Patented (US 12,217,493).</p>
             <div class="project-tags">
                 <span>TensorFlow</span>
                 <span>ECS Fargate</span>
@@ -891,10 +891,10 @@
             </div>
             <div class="card-where">Integral Ad Science &middot; Trust &amp; Safety</div>
             <h3>Multimodal Video Retrieval &amp; Labeling Pipeline</h3>
-            <p>Built an internal Python package for end-to-end multimodal labeling. Vector search finds relevant content, LLM+VLM classifies it, human A/B testing validates, and DSPy optimizes prompts in a continuous RLAIF loop. Cut labeling cost by 99.5%.</p>
+            <p>Ideated, prototyped and shipped ALP, an automated labeling platform: text, image and video embeddings, vector index, ANN search, and VLM/LLM review of positive matches. Took it from proof of concept to a company-wide, cross-team platform. Cut labeling cost and turnaround by 99.5%.</p>
             <div class="project-tags">
                 <span>DSPy</span>
-                <span>RLAIF</span>
+                <span>ANN Search</span>
                 <span>VLM / LLM</span>
                 <span>FAISS</span>
             </div>
@@ -917,6 +917,22 @@
             </div>
         </div>
 
+        <!-- Card: System One -->
+        <div class="project-card fade-in" data-role="staff">
+            <div class="card-top">
+                <div class="card-icon indigo">&#9881;</div>
+                <span class="project-impact green">~70% cost cut, 1 week</span>
+            </div>
+            <div class="card-where">Integral Ad Science &middot; Trust &amp; Safety</div>
+            <h3>System One Decision Models</h3>
+            <p>Took open-source decision models from idea to production in one week. Benchmarked variants, scaled scoring on AWS Auto Scaling Groups, and pitched the CTO and leadership on placing it in front of our classifiers, cutting an estimated ~70% of costs on production data.</p>
+            <div class="project-tags">
+                <span>AWS Auto Scaling</span>
+                <span>Benchmarking</span>
+                <span>Cost Optimization</span>
+            </div>
+        </div>
+
         <!-- Card 4: Misinformation Detection -->
         <div class="project-card fade-in" data-role="senior">
             <div class="card-top">
@@ -925,7 +941,7 @@
             </div>
             <div class="card-where">Integral Ad Science &middot; Trust &amp; Safety</div>
             <h3>Misinformation Detection System</h3>
-            <p>Directed end-to-end development using multimodal and DistilBERT models extended for longer token classification. Catches low-prevalence misinformation, content that evades simple filters, across 22M+ videos per day in production.</p>
+            <p>Directed end-to-end. Prototyped a teacher model using open-source LLMs with RAG to label training data, then trained and productionized DistilBERT models extended for long token lengths to flag misleading narratives across 22M+ videos per day.</p>
             <div class="project-tags">
                 <span>DistilBERT</span>
                 <span>Multimodal</span>
@@ -942,7 +958,7 @@
             </div>
             <div class="card-where">Integral Ad Science &middot; Media Team</div>
             <h3>Pseudo-Labeling &amp; Synthetic Data Generation</h3>
-            <p>Built a pseudo-labeling pipeline using SigLIP and Vicuna that cut ML development costs by 90%+ across 49 video categories. Separately led synthetic data generation with GPT-Neo that boosted Brand Safety precision by 49%.</p>
+            <p>Built a pseudo-labeling pipeline using SigLIP and Vicuna that cut model development cost by 90%+ across 12 unsafe categories. Separately led synthetic Twitter data generation with GPT-Neo that raised harmful-content classifier precision by 49%.</p>
             <div class="project-tags">
                 <span>SigLIP</span>
                 <span>Vicuna</span>
@@ -959,7 +975,7 @@
             </div>
             <div class="card-where">Integral Ad Science &middot; Media Team</div>
             <h3>Machine Translation at Scale</h3>
-            <p>Built custom translation models with OpenNMT for 42 language pairs. Translates 75 trillion characters annually while reducing costs by 67% for the core contextual classification pipeline.</p>
+            <p>Built custom translation models with OpenNMT for 42 language pairs. Translates 75 trillion characters annually at 67% lower cost, enabling multilingual harm detection in production pipelines.</p>
             <div class="project-tags">
                 <span>OpenNMT</span>
                 <span>75T chars/year</span>
@@ -1112,7 +1128,7 @@
         </div>
     </div>
     <div class="stack-also fade-in">
-        <span class="stack-also-label">Also:</span> Python &middot; PyTorch &middot; AWS &middot; Databricks &middot; Docker &middot; PySpark &middot; SQL
+        <span class="stack-also-label">Also:</span> Python &middot; Bash &middot; PyTorch &middot; AWS &middot; GCP &middot; Databricks &middot; Docker &middot; PySpark &middot; SQL
     </div>
 </section>
 
